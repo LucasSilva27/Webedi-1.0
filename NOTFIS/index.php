@@ -411,7 +411,14 @@ while (!feof($nf)) {
     }
 
     echo "<hr>";
-
+ /*
+     catch (Exception $e) {
+              print "Ocorreu um erro ao tentar executar esta ação, foi gerado um 
+               LOG do mesmo, tente novamente mais tarde.";
+              GeraLog::getInstance()->inserirLog("Erro: Código: " . $e->getCode() . 
+                " Mensagem: " . $e->getMessage());
+          }
+    */
 }
 fclose($nf);
 ?>
